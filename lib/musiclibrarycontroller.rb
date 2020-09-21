@@ -14,6 +14,7 @@ class MusicLibraryController
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
+<<<<<<< HEAD
     input = nil
     until input == "exit" do
       input = gets
@@ -23,6 +24,11 @@ class MusicLibraryController
       self.list_songs_by_artist if input == "list artist"
       self.list_songs_by_genre if input == "list genre"
       self.play_song if input == "play song"
+=======
+    input = gets
+    until input == "exit" do
+      self.list_songs if input == "list songs"
+>>>>>>> 52ba111d1074f3bbc43243f1674916c2ede006b9
     end
   end
   
